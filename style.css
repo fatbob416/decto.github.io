@@ -172,6 +172,9 @@ body {
     .burger {
         display: flex;
     }
+    .hero {
+        padding: 100px 0 80px;
+    }
 }
 
 .container {
