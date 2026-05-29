@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Mobile menu
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        nav.classList.toggle('open');
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burger.classList.remove('active');
+            nav.classList.remove('open');
+        });
+    });
+    
     // Fade-in on scroll
     const fadeElements = document.querySelectorAll('.card, .why-item, .step, .case-card, .audience-text, .contact-form');
     fadeElements.forEach(el => el.classList.add('fade-in'));
