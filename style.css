@@ -285,7 +285,7 @@ h2 {
 
 .hero-scroll {
     position: absolute;
-    bottom: 40px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px;
@@ -318,12 +318,16 @@ h2 {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 12px 40px rgba(255, 60, 172, 0.3);
 }
-/* MARQUEE */
 .marquee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
     padding: 20px 0;
     background: var(--gradient);
     white-space: nowrap;
+    z-index: 2;
 }
 
 .marquee-track {
