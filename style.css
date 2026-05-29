@@ -27,22 +27,14 @@ body {
     background: var(--bg-dark);
 }
 
-/* HEADER */
-
-.logo img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-}
-
 /* HERO LOGO */
 .hero-logo {
     margin-bottom: 40px;
 }
 
 .hero-logo img {
-    width: 80px;
-    height: 80px;
+    width: 157px;
+    height: 157px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 40px rgba(255, 60, 172, 0.2);
