@@ -88,7 +88,7 @@ body {
 .nav-btn {
     padding: 10px 22px;
     background: var(--gradient);
-    color: var(--bg-dark) !important;
+    color: #ffffff !important;
     border-radius: 100px;
     font-weight: 700;
     font-size: 13px !important;
@@ -140,29 +140,33 @@ body {
         top: 70px;
         left: 0;
         right: 0;
-        bottom: 0;
-        background: rgba(10, 10, 10, 0.95);
+        background: rgba(10, 10, 10, 0.97);
         backdrop-filter: blur(16px);
         flex-direction: column;
-        justify-content: center;
-        gap: 32px;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 24px;
+        transform: translateY(-20px);
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .nav.open {
         opacity: 1;
         pointer-events: all;
+        transform: translateY(0);
     }
 
     .nav a {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .nav-btn {
-        font-size: 16px !important;
+        font-size: 14px !important;
         padding: 14px 28px;
+        margin-top: 8px;
     }
 
     .burger {
